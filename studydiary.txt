@@ -4,3 +4,5 @@
 디렉터리 생성 mkdir 이름
 디렉터리 이동 cd 이름
 가상환경 진입 activate, 탈출 deactivate
+1-06까지 완료
+
