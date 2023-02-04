@@ -1,8 +1,31 @@
 2023/2/2
-드라이브 처음으로 가기 cd\ or cd/
-디렉터리(폴더)==파일 분류를 위해 붙이는 이름공간
-디렉터리 생성 mkdir 이름
-디렉터리 이동 cd 이름
-가상환경 진입 activate, 탈출 deactivate
+-드라이브 처음으로 가기 cd\ or cd/
+-디렉터리(폴더)==파일 분류를 위해 붙이는 이름공간
+-디렉터리 생성 mkdir 이름
+-디렉터리 이동 cd 이름
+-가상환경 진입 activate, 탈출 deactivate
 1-06까지 완료
 
+
+2023/2/4
+-@app.get("/hello") 어노테이션은 /hello 라는 URL요청이 발생하면
+해당 함수를 실행하여 결과를 리턴하라는 의미
+
+-파이참 -> Settings -> Terminal -> Shell path -> cmd.exe
+=>파이참 터미널을 실행했을때 cmd가 아니라 powershell이 나타나서 변경
+powershell.exe를 cmd.exe로
+
+-(myapi) C:\venvs\projects\myapi>uvicorn main:app --reload
+main:app에서 main은 main.py 파일을 의미하고 app은 main.py의 app 객체를 의미
+--reload 옵션은 프로그램이 변경되면 서버 재시작 없이 그 내용을 반영하라는 의미
+
+--파이보 프로젝트 전체 구조--
+├── main.py        안에 app객체(핵심)을 통해 FastAPI 설정, 전체적인 환경 설정
+├── database.py   데이터베이스 설정
+├── models.py     모델 클래스들을 정의할 파일
+├── domain        질문과 답변을 작성하는 게시판
+│   ├── answer
+│   ├── question
+│   └── user
+└── frontend       소스 및 빌드 파일들을 저장할 루트 디렉터리
+2-2 question id까지
