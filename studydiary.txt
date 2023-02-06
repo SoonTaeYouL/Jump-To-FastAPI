@@ -29,3 +29,31 @@ main:app에서 main은 main.py 파일을 의미하고 app은 main.py의 app 객�
 │   └── user
 └── frontend       소스 및 빌드 파일들을 저장할 루트 디렉터리
 2-2 question id까지
+
+23/02/06
+FastAPI서버 실행하기(백엔드 서버) 파이참 터미널
+(myapi) projects/myapi > uvicorn main:app --reload
+Svelte 서버 실행하기 (프론트엔드 서버) VSCODE 터미널
+C:\venvs\projects\myapi\frontend> npm run dev
+
+라우터(Router)
+라우팅이란 FastAPI가 요청받은 URL을 해석하여 그에 맞는 함수를 
+실행하여 그 결과를 리턴하는 행위를 말한다.
+
+Dependency Injection(의존성 주입)
+필요한 기능을 선언하여 사용할 수 있다는 의미이다.
+
+Pydantic
+FastAPI의 입출력 스펙을 정의하고 그 값을 검증하기 위해 사용하는 라이브러리이다.
+-입출력 항목의 갯수와 타입을 설정
+-입출력 항목의 필수값 체크
+-입출력 항목의 데이터 검증
+
+2-06까지
+
+
+
+
+
+
+
