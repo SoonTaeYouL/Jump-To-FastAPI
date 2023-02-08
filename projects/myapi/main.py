@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
+from domain.answer import answer_router
 from domain.question import  question_router #파일에 생성한 라우터 객체를 앱에 등록
 
 app=FastAPI()
@@ -22,3 +23,4 @@ app.add_middleware(
 #     return{"message" : "안녕하세요 화이보"}
 
 app.include_router(question_router.router)#include 메소드 사용하여 라우터 객체 등록
+app.include_router(answer_router.router)
